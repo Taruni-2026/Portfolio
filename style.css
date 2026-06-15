@@ -700,46 +700,40 @@ a:active{
 
 @media screen and (max-width:768px){
 
-    main{
-        margin-top:180px;
+    .home-section{
+        flex-direction:column;
+        width:90%;
+        margin:20px auto;
+        padding:20px;
+        height:auto;
     }
 
     .navbar{
         flex-direction:column;
-        text-align:center;
+        padding:15px;
     }
 
     .links{
+        flex-wrap:wrap;
         justify-content:center;
-        gap:12px;
-    }
-
-    .left h1{
-        font-size:36px;
-    }
-
-    .label{
-        flex-direction:column;
-        gap:10px;
-    }
-
-    #intern-label1,
-    #intern-label2{
-        width:90%;
-    }
-
-    .buttons{
-        flex-direction:column;
         gap:15px;
+    }
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .skills-section{
+        grid-template-columns:1fr;
+        width:90%;
     }
 
     .about-info{
         flex-direction:column;
     }
 
-    .image img{
-        width:180px;
-        height:180px;
+    .edu{
+        flex-direction:column;
     }
 
     .info{
@@ -747,18 +741,10 @@ a:active{
         align-items:flex-start;
     }
 
-    .edu{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .edu-right{
-        align-items:flex-start;
-    }
-
     .dec{
-        width:300px;
-        height:350px;
+        width:320px;
+        height:420px;
+        margin:40px auto;
     }
 
     .circle{
@@ -767,11 +753,8 @@ a:active{
         font-size:45px;
     }
 
-    .heading,
-    .proj-head,
-    .skills-heading,
-    .Experience-sec,
-    .edu-head{
-        margin-left:5%;
+    .buttons{
+        flex-direction:column;
+        gap:15px;
     }
 }
