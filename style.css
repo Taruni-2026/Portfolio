@@ -666,7 +666,10 @@ a:active{
 /* ================= RESPONSIVE ================= */
 
 @media screen and (max-width:1024px){
-
+    .edu-head{
+    height:auto !important;
+    padding:12px 25px !important;
+}
     .home-section{
         flex-direction:column;
         align-items:center;
