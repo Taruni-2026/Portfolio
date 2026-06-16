@@ -174,8 +174,8 @@ main{
     color:white;
 }
 .about-me{
+     width:100%;
     max-width:650px;
-    width:100%;
     line-height:1.6;
 }
 .skills-heading:hover{
@@ -363,6 +363,7 @@ a{
     padding-left: 20px;
     text-align: left;
     margin-bottom:0px;
+    width:100%
     max-width: 650px;
     line-height: 1.6;
 }
@@ -697,8 +698,81 @@ a:active{
         width:90%;
     }
 }
+/*-----*/
 
 @media screen and (max-width:768px){
+    /* Prevent horizontal scrolling */
+body{
+    overflow-x:hidden;
+}
+
+/* Force all sections to fit screen */
+.home-section,
+.aboutsection,
+.Project,
+.skills-section,
+.exp1,
+.exp2,
+.exp3,
+.edu{
+    width:95% !important;
+    max-width:95% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    box-sizing:border-box;
+}
+
+/* Fix big text overflow */
+.left h1{
+    font-size:32px !important;
+    line-height:1.2;
+    word-break:break-word;
+}
+
+/* Fix about text */
+.content p{
+    font-size:16px;
+    line-height:1.8;
+    text-align:left;
+    word-break:break-word;
+}
+
+/* Make image fit */
+.image img{
+    width:180px;
+    height:180px;
+    max-width:100%;
+}
+
+/* Fix skill tags */
+.skill-items{
+    gap:10px;
+}
+
+.skill-tag{
+    font-size:14px;
+    padding:8px 14px;
+}
+
+/* Fix education card */
+.edu-left h2{
+    font-size:20px;
+}
+
+.edu-left p{
+    font-size:16px;
+}
+
+/* Fix card on right side */
+.dec{
+    width:100% !important;
+    max-width:320px !important;
+}
+
+/* Very important */
+*{
+    box-sizing:border-box;
+}
 
     .navbar{
         flex-direction:column;
